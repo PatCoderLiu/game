@@ -45,17 +45,15 @@ def move_Direction():
             else:
                 print("You cannot run into a wall")
     if (direction == 'down'):
-        if x != 5:
-            if y != 1:
-                print("You have moved down 1 block")
-                y = y - 1
+        if y != 1:
+            print("You have moved down 1 block")
+            y = y - 1
         else:
             print("You can not run into a wall")
     if (direction == 'up'):
-        if x != 5:
-            if y != 3:
-                print("You have moved up 1 block")
-                y = y + 1
+        if y != 3:
+            print("You have moved up 1 block")
+            y = y + 1
         else:
             print("You can not run into a wall")
     
@@ -112,12 +110,12 @@ def enter_Room():
                 x = 1
                 y = 3
                 roomnumber = roomnumber + 1
-            if x == 8:
-                if roomnumber == 2:
-                    print("You have entered a room")
-                    x = 1
-                    y = 5
-                    roomnumber = roomnumber + 1
+        if x == 8:
+            if roomnumber == 2:
+                print("You have entered a room")
+                x = 1
+                y = 5
+                roomnumber = roomnumber + 1
     if direction == 'left':
         if x == -2:
             print("You have entered a room")
